@@ -4,7 +4,7 @@
   --font-sans: var(--font-dm-sans), Arial, sans-serif;
   --font-mono: var(--font-jetbrains-mono), monospace;
 
-  --color-base: #0C0C0E;
+  --color-bg-base: #0C0C0E;
   --color-surface: #141416;
   --color-elevated: #1C1C20;
   --color-border: #2A2A30;
