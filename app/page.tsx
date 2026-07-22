@@ -142,7 +142,7 @@ export default function Home() {
           Tu hogar en<br />
           <span style={{ color: "#C9A55A" }}>Madrid</span>
         </h1>
-        <p className="relative text-base text-[#C8C4BB] max-w-md leading-relaxed mb-10">
+        <p className="relative text-base text-[#F2EFE8] max-w-md leading-relaxed mb-10">
           Pisos totalmente equipados, con todo lo necesario para tu vida universitaria en la capital española.
         </p>
 
