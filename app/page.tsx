@@ -142,14 +142,14 @@ export default function Home() {
           Tu hogar en<br />
           <span style={{ color: "#C9A55A" }}>Madrid</span>
         </h1>
-        <p className="relative text-base text-[#8A8A96] max-w-md leading-relaxed mb-10">
+        <p className="relative text-base text-[#C8C4BB] max-w-md leading-relaxed mb-10">
           Pisos totalmente equipados, con todo lo necesario para tu vida universitaria en la capital española.
         </p>
 
         {/* Stats bar */}
         <div className="relative flex items-center gap-0 rounded-2xl overflow-hidden border border-[#2A2A30]" style={{ background: "#141416" }}>
           {[
-            { valor: "3", label: "Pisos disponibles" },
+            { valor: "1", label: "Piso disponible" },
             { valor: "Madrid", label: "España" },
             { valor: "1,499€", label: "Desde / mes" },
           ].map((s, i) => (
