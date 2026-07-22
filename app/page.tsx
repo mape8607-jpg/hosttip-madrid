@@ -149,7 +149,7 @@ export default function Home() {
         {/* Stats bar */}
         <div className="relative flex items-center gap-0 rounded-2xl overflow-hidden border border-[#2A2A30]" style={{ background: "#141416" }}>
           {[
-            { valor: "3", label: "Pisos disponibles" },
+            { valor: "1", label: "Piso disponible" },
             { valor: "Madrid", label: "España" },
             { valor: "1,499€", label: "Desde / mes" },
           ].map((s, i) => (
