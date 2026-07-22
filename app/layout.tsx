@@ -15,6 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://madrid.hosttip.mx"),
   title: "Hosttip Madrid — Habitaciones en renta",
   description: "Pisos compartidos para estudiantes en Madrid. Almansa 55 y Eguilaz 3.",
 };
