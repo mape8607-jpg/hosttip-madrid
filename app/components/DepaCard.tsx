@@ -19,7 +19,7 @@ interface Depa {
   fotos: string[];
   disponible: boolean;
   disponibleDesde?: string;
-  disponibleFecha?: string; // ISO YYYY-MM-DD para calcular proximidad
+  disponibleFecha?: string; // ISO YYYY-MM-DD (referencia interna)
   mapsUrl?: string;
   whatsappMsg: string;
 }
@@ -32,15 +32,8 @@ const iconMap: Record<string, React.ReactNode> = {
   train: <Train size={14} />,
 };
 
-function esMenos30Dias(fechaISO?: string): boolean {
-  if (!fechaISO) return true;
-  const diff = new Date(fechaISO).getTime() - Date.now();
-  return diff <= 30 * 24 * 60 * 60 * 1000;
-}
-
 export default function DepaCard({ depa, whatsapp }: { depa: Depa; whatsapp: string }) {
   const [fotoActual, setFotoActual] = useState(0);
-  const cercano = esMenos30Dias(depa.disponibleFecha);
 
   const whatsappUrl = `https://wa.me/${whatsapp}?text=${encodeURIComponent(depa.whatsappMsg)}`;
 
@@ -68,7 +61,7 @@ export default function DepaCard({ depa, whatsapp }: { depa: Depa; whatsapp: str
       className="flex flex-col rounded-[12px] overflow-hidden transition-transform duration-200 hover:-translate-y-1"
       style={{
         background: "#141416",
-        border: cercano ? "2px solid #3D9B6E" : "1px solid #2A2A30",
+        border: "2px solid #3D9B6E",
       }}
       data-testid="depa-card"
     >
@@ -79,7 +72,6 @@ export default function DepaCard({ depa, whatsapp }: { depa: Depa; whatsapp: str
           alt={`${depa.nombre} — foto ${fotoActual + 1}`}
           fill
           className="object-cover transition-all duration-200"
-          style={!cercano ? { filter: "grayscale(0.65) brightness(0.7)" } : {}}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority={fotoActual === 0}
         />
@@ -121,11 +113,9 @@ export default function DepaCard({ depa, whatsapp }: { depa: Depa; whatsapp: str
         {/* Header */}
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="text-[11px] font-bold uppercase tracking-[0.08em] mb-0.5" style={{ color: cercano ? "#3D9B6E" : "#C94A4A" }}>
+            <p className="text-[11px] font-bold uppercase tracking-[0.08em] mb-0.5" style={{ color: "#3D9B6E" }}>
               {depa.disponibleDesde
-                ? cercano
-                  ? `Disponible a partir del ${depa.disponibleDesde}`
-                  : `No disponible hasta el ${depa.disponibleDesde}`
+                ? `Disponible a partir del ${depa.disponibleDesde}`
                 : "Disponible"}
             </p>
             <h3 className="text-lg font-semibold text-[#F2EFE8]">{depa.nombre}</h3>
