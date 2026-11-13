@@ -37,11 +37,11 @@ const depas = [
       "/depas/almansa/fb9.jpg",
     ],
     disponible: true,
-    disponibleDesde: "15 de agosto de 2026",
-    disponibleFecha: "2026-08-15",
+    disponibleDesde: "1 de febrero de 2027",
+    disponibleFecha: "2027-02-01",
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=C.+de+Almansa,+55,+Tetuán,+28039+Madrid,+España",
     whatsappMsg:
-      "Hola, me interesa información sobre el piso en Calle Almansa 55, Madrid. ¿Hay disponibilidad a partir del 15 de agosto de 2026?",
+      "Hola, me interesa información sobre el piso en Calle Almansa 55, Madrid. ¿Hay disponibilidad a partir del 1 de febrero de 2027?",
   },
   {
     nombre: "Eguilaz 3",
@@ -69,11 +69,11 @@ const depas = [
       "/depas/eguilaz/bano.jpg",
     ],
     disponible: true,
-    disponibleDesde: "1 de febrero de 2027",
-    disponibleFecha: "2027-02-01",
+    disponibleDesde: "1 de marzo de 2027",
+    disponibleFecha: "2027-03-01",
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=C.+de+Eguilaz,+3,+Chamberí,+28010+Madrid,+España",
     whatsappMsg:
-      "Hola, me interesa información sobre el piso en Calle Eguilaz 3, Madrid. ¿Hay disponibilidad a partir del 1 de febrero de 2027?",
+      "Hola, me interesa información sobre el piso en Calle Eguilaz 3, Madrid. ¿Hay disponibilidad a partir del 1 de marzo de 2027?",
   },
   {
     nombre: "Princesa 8",
@@ -107,11 +107,11 @@ const depas = [
       "/depas/princesa/foto11.jpeg",
     ],
     disponible: true,
-    disponibleDesde: "1 de febrero de 2027",
-    disponibleFecha: "2027-02-01",
+    disponibleDesde: "1 de marzo de 2027",
+    disponibleFecha: "2027-03-01",
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=C.+de+la+Princesa,+8,+28008+Madrid,+España",
     whatsappMsg:
-      "Hola, me interesa información sobre el piso en Calle de la Princesa 8, Madrid. ¿Hay disponibilidad a partir del 1 de febrero de 2027?",
+      "Hola, me interesa información sobre el piso en Calle de la Princesa 8, Madrid. ¿Hay disponibilidad a partir del 1 de marzo de 2027?",
   },
 ];
 
